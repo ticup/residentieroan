@@ -439,6 +439,15 @@ input[type="email"]:focus {
 *** CROSSFADE
 *****************************************************/
 
+#slideshow > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 0;
+}
+
 #crossfade > img {
 	background-image: url(../images/banner_background-ROAN.jpg);
 	background-repeat: no-repeat;
