@@ -438,14 +438,43 @@ input[type="email"]:focus {
 /*****************************************************
 *** CROSSFADE
 *****************************************************/
-
+@media only screen and (min-width: 50px) {
+  #slideshow > img {
+    margin-top: 200px;
+  }
+}
+@media only screen and (min-width: 300px) {
+  #slideshow > img {
+    margin-top: 175px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #slideshow > img {
+    margin-top: 150px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #slideshow > img {
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #slideshow > img {
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  #slideshow > img {
+    margin-top: 0px;
+  }
+}
 #slideshow > img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   opacity: 0;
   z-index: 0;
+  width: 100%;
 }
 
 #crossfade > img {
@@ -1111,6 +1140,9 @@ Responsive Styles
   #main-nav .col-md-4:last-child {
     display: none;
   }
+  .container {
+    margin-top: 50px;
+  }
   #main-nav .logo {
     padding-top: 0px;
   }
@@ -1128,8 +1160,12 @@ Responsive Styles
   #features {
     padding: 100px 0;
   }
+  .col-md-5 {
+    padding-top: 40px;
+  }
   #features .feature-item {
     margin-bottom: 80px;
+    margin-top: 40px;
   }
   #features .feature-item:last-child {
     margin-bottom: 0;
